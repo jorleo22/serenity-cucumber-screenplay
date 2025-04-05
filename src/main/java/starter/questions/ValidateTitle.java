@@ -3,11 +3,11 @@ package starter.questions;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
-import starter.ui.CartPage;
+import starter.userinterfaces.CartPage;
 
-public class ValidateTitle implements Question {
+public class ValidateTitle implements Question<String> {
     @Override
-    public Object answeredBy(Actor actor) {
+    public String answeredBy(Actor actor) {
         return actor.asksFor(Text.of(CartPage.LBL_TITLE));
     }
 

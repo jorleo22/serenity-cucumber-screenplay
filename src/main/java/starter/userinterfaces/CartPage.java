@@ -1,4 +1,4 @@
-package starter.ui;
+package starter.userinterfaces;
 
 import net.serenitybdd.screenplay.targets.Target;
 
